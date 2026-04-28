@@ -1,9 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Messages from "./pages/Messages";
+import Siddhi from "./pages/Siddhi";
+import Divin from "./pages/Divin"
+
+
 export default function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-black">
-      <h1 className="text-4xl font-bold text-green-400">
-        Tailwind is working 🚀
-      </h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/messages" element={<Messages />} />
+        <Route path="/siddhi" element={<Siddhi />} />
+        <Route path="/divin" element={<Divin />} />
+      </Routes>
+    </Router>
   );
 }
