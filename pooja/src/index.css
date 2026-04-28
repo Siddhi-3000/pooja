@@ -1,3 +1,102 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 340 60% 99%;
+    --foreground: 320 25% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 320 25% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 320 25% 20%;
+
+    --primary: 340 75% 70%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 320 90% 85%;
+
+    --secondary: 270 60% 88%;
+    --secondary-foreground: 270 40% 30%;
+
+    --muted: 330 40% 96%;
+    --muted-foreground: 320 15% 50%;
+
+    --accent: 280 70% 85%;
+    --accent-foreground: 280 40% 25%;
+
+    --lavender: 270 70% 80%;
+    --rose: 345 80% 80%;
+    --blush: 350 100% 94%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 330 40% 92%;
+    --input: 330 40% 92%;
+    --ring: 340 75% 70%;
+
+    --radius: 1.25rem;
+
+    --gradient-romantic: linear-gradient(135deg, hsl(340 80% 88%) 0%, hsl(280 70% 88%) 50%, hsl(260 80% 92%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(340 100% 98%) 0%, hsl(280 60% 96%) 100%);
+    --gradient-glow: radial-gradient(circle at center, hsl(340 90% 85% / 0.6) 0%, transparent 70%);
+    --gradient-button: linear-gradient(135deg, hsl(340 75% 75%) 0%, hsl(290 70% 78%) 100%);
+
+    --shadow-soft: 0 10px 40px -10px hsl(340 60% 70% / 0.25);
+    --shadow-glow: 0 0 60px hsl(340 90% 80% / 0.45);
+    --shadow-card: 0 8px 30px -8px hsl(320 50% 60% / 0.18);
+
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--gradient-soft);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/70 backdrop-blur-xl border border-white/60 rounded-3xl;
+    box-shadow: var(--shadow-card);
+  }
+
+  .glow-orb {
+    background: var(--gradient-glow);
+    filter: blur(40px);
+  }
+
+  .text-gradient {
+    background: var(--gradient-button);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
