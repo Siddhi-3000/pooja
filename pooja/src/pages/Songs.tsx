@@ -21,7 +21,7 @@ const Songs = () => {
             <iframe
               title="Birthday playlist"
               style={{ borderRadius: "16px" }}
-              src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdPec7aLusmQ?utm_source=generator&theme=0"
+              src="https://open.spotify.com/embed/playlist/6oVEPIHkxC0yjRHHHuXYI0?utm_source=generator"
               width="100%"
               height="500"
               frameBorder="0"
@@ -30,10 +30,6 @@ const Songs = () => {
             />
           </div>
         </div>
-
-        <p className="text-center mt-8 text-sm text-muted-foreground italic">
-          Replace the embed link with your own playlist anytime ♡
-        </p>
       </section>
     </PageLayout>
   );

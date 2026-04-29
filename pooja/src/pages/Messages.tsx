@@ -2,12 +2,42 @@ import PageLayout from "@/components/PageLayout";
 import { Heart } from "lucide-react";
 
 const messages = [
-  { from: "Mom", text: "My darling, watching you grow into the beautiful soul you are today is my greatest joy. Happy 19th, my love.", emoji: "🌸" },
-  { from: "Dad", text: "You'll always be my little girl, no matter how many candles are on the cake. So proud of you.", emoji: "🎈" },
-  { from: "Best Friend", text: "Nineteen looks unreal on you. Cheers to chaos, late-night calls, and a year filled with magic.", emoji: "✨" },
-  { from: "Sister", text: "From sharing toys to sharing secrets — I'd choose you in every lifetime. Happy birthday, bestie-by-blood.", emoji: "💞" },
-  { from: "Grandma", text: "Sweetheart, may your year bloom as gently and as brightly as you do. All my love.", emoji: "🌷" },
-  { from: "From Everyone", text: "You make every room softer just by walking in. Have the loveliest day.", emoji: "🤍" },
+  { from: "Shree",
+    text: "Happiest birthday Pooozaaaaa🎊❤️ Always stay Blessed and Happy 🚀😇 and always Enjoy.....Have a Rockkkkkkkk 20....!!!🚀❤️",
+    imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459172/pooja1_grwj6b.jpg"
+  },
+  { from: "Shivam ", 
+    text: "Happy Birthday Pooja!(Bhabhi ji ) 🎉 May your day be filled with happiness and laughter. You deserve all the smiles and success ahead 🫂♥️", 
+    imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459172/pooja3_x0cyoe.jpg"
+  },
+  { from: "Christina ", 
+    text: "Wish you many many many many many more happy returns of the day bhabhi jiiiiiiii♥️🫂🥳 May God always guide you in his divine presence 😇🫶 aur iss Jayda ko sambhalne ki shakti de 😂", 
+    imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459172/pooja6_qrpr96.jpg" 
+  },
+  { from: "Jatin", 
+    text: "Happy Birthday Pooja🥳✨ May your day bring you smiles, laughter, and good times. Wishing you a year full of happiness and new achievements. Enjoy your special day! 😊", 
+    imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459172/pooja2_irehwq.jpg"
+  },
+  {from: "Devendra Sir", 
+    text: "Happy birthday Pooja ❤️🎉🎂 God bless you 🙏😇  Blessed to have you as a student 🙏 The only student who beat sir 😂🎊",
+    imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459172/aayu_e2nrca.jpg"
+  },
+  { from: "Rohan", 
+    text: "HAPPIEST BIRTHDAY POOJA AKA BHABHI😝 STAY BLESSED ALWAYS✌️ AND WHAT I FORGOT ANYWAY ENJOY YO DAY TO ITS FULLEST🔥🔥🔥", 
+    imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459171/pooja8_zevqlg.jpg"
+  },
+  {from: "Advait", 
+    text: "Happy Birthday Gatli 👹👹 SIDDHI maajhi aahe fakt maajhi nothing of you all mine 👽👽",
+    imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459171/poojja7_qukjdm.jpg"
+  },
+  { from: "Pranali", 
+    text: "Happiest Birthday, Pooja!!💓🫶🏻 As long as I have a best friend like you by my side, anything feels possible. 💕 I got a best friend and sister in one person, and that's you. 💞😚 I can share anything with you without any hesitation 🥹 and yes, I'm never gonna call you by your name; you will always be takli for me, even if your hair touches the floor, haha...😂 I'm missing our hihaha and those days when you came for cooking lessons from me. 😂😂 No matter how long we are apart, our bond will always remain the same. 💗🤌🏻 No matter how many friends are in my life, you will always have a special place in my heart. ❤️🎀 I was, I am, and I will be there for you in any situation... 💌 I'm lucky to have you as my best friend. 🫂💗 Loveee you from the bottom of my heart, Takliiiii!!❤️😘🧿", 
+    imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459171/pooja4_rlh1vz.jpg"
+  },
+  {from: "Chinmay", 
+    text: "Happy Birthday gatli malinga pgl batli  behana bhagvan tera bhala kare aur akaal  budhi aur accha dimag de jo proper use kar sake tu 🎉🥳🎂🎁❤️",
+    imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459171/pooja5_datc06.jpg"
+  }
 ];
 
 const Messages = () => {
@@ -27,8 +57,12 @@ const Messages = () => {
               style={{ animationDelay: `${i * 80}ms` }}
               className="group glass-card p-6 hover:-translate-y-2 hover:shadow-glow transition-all duration-500 animate-fade-in-up"
             >
-              <div className="aspect-[4/3] rounded-2xl bg-gradient-romantic mb-5 flex items-center justify-center text-4xl">
-                {m.emoji}
+              <div className="rounded-2xl overflow-hidden mb-5 flex justify-center">
+                <img
+                  src={m.imageUrl}
+                  alt={m.from}
+                  className="max-w-full h-auto rounded-2xl"
+                />
               </div>
               <div className="flex items-center gap-2 mb-3">
                 <Heart className="w-4 h-4 text-primary fill-primary" />

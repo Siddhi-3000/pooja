@@ -32,9 +32,9 @@ const PageLayout = ({ children, showBack = true }: PageLayoutProps) => {
             <span className="font-serif text-lg italic text-foreground/80">forever nineteen</span>
           </Link>
         )}
-        <div className="text-sm text-muted-foreground font-light tracking-wide hidden sm:block">
+        {/* <div className="text-sm text-muted-foreground font-light tracking-wide hidden sm:block">
           with love ✿
-        </div>
+        </div> */}
       </nav>
 
       <main className="relative z-10 animate-fade-in">{children}</main>
