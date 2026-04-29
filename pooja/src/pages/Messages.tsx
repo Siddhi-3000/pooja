@@ -27,7 +27,7 @@ const messages = [
     imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459171/pooja8_zevqlg.jpg"
   },
   {from: "Advait", 
-    text: "Happy Birthday Gatli 👹👹 SIDDHI maajhi aahe fakt maajhi nothing of you all mine 👽👽",
+    text: "Happy Birthday Gatli 👹👹 Well I know that I dont show it but I do care about you I might show like I dont but I do yeah sure. I wish you to be happy tya divshi when i said sorry tyachya just aadhi siddhi ne mala saangitla ki tula jaila late jhala tya mule tujha phone rahila aani tujhi mam tula oradli like khup and you were about to cry it was for that I felt like te late maajhya mule jhalela tula and Im again sorry for that. Also thode divsaan aadhi jevha aapn inorbit la gelelo tevha sorry like after we get home I asked siddhi ki ky jhalela so she told me ki I made you feel unwanted there when we were going to inorbit I am even sorry about it . Also I miss us fighting over things it was fun I liked it why dont you fight with me anymore you even have gone a bit quiter dont be like that I want you to fight with me. Again Happy Birthday enjoy your day.",
     imageUrl: "https://res.cloudinary.com/dr6mkbr8y/image/upload/v1777459171/poojja7_qukjdm.jpg"
   },
   { from: "Pranali", 
